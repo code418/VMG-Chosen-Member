@@ -85,7 +85,7 @@ class ChosenHelper
             }
 
             if ( ! is_null($group_by)) {
-                ee()->db->group_by($group_by);
+                ee()->db->group_by($select_fields);
             }
 
             // Handle custom search restrictions
